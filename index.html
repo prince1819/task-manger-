@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Task Manager</h1>
+
+        <!-- THEME -->
+        <div class="section">
+            <button id="themeToggle"> Dark Mode</button>
+        </div>
+
+        <!-- FORM -->
+        <div class="section">
+            <form id="taskForm">
+                <input type="text" id="title" placeholder="Task Title">
+                <input type="text" id="description" placeholder="Description">
+
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <select id="category">
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="Urgent">Urgent</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+
+        <!-- SEARCH + FILTER -->
+        <div class="section">
+            <input type="text" id="search" placeholder="Search...">
+
+            <select id="filterCategory">
+                <option value="all">All</option>
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+        </div>
+
+        <!-- TASK LIST -->
+        <div class="section">
+            <ul id="taskList"></ul>
+        </div>
+
+        <div id="notification"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

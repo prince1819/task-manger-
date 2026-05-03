@@ -1,0 +1,29 @@
+.section {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+    background: #121212;
+    color: rgb(234, 231, 231);
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
